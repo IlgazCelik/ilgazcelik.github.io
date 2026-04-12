@@ -28,7 +28,6 @@
         .contact-links { margin-top: 15px; }
         .contact-links a { color: #4da6ff; text-decoration: none; margin: 0 10px; font-size: 0.9rem; }
 
-        /* Profile Image Styles */
         .profile-img-container {
             text-align: center;
             margin-bottom: 20px;
@@ -43,7 +42,6 @@
             background-color: #333;
         }
 
-        /* Layout Grid */
         .row {
             display: flex;
             flex-wrap: wrap;
@@ -52,10 +50,9 @@
             margin: 0 auto;
         }
 
-        .leftcolumn { flex: 75%; padding-right: 20px; }
-        .rightcolumn { flex: 25%; }
+        .leftcolumn { flex: 70%; padding-right: 20px; }
+        .rightcolumn { flex: 30%; }
 
-        /* Cards */
         .card {
             background-color: #1e1e1e;
             padding: 25px;
@@ -67,7 +64,6 @@
         h2, h3 { color: #4da6ff; border-bottom: 1px solid #333; padding-bottom: 10px; }
         .date { float: right; color: #888; font-size: 0.85rem; }
 
-        /* Skills Tags */
         .tag-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
         .tag {
             background: #333;
@@ -79,7 +75,7 @@
         }
 
         ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
+        li { margin-bottom: 8px; }
 
         .footer {
             padding: 40px;
@@ -102,7 +98,8 @@
     <p>Computer Science @ UCF | AI & Computer Vision Researcher</p>
     <div class="contact-links">
         <a href="mailto:celikfaruk@ucf.edu">celikfaruk@ucf.edu</a> | 
-        <a href="https://www.linkedin.com/in/faruk-celik-197823221">LinkedIn</a>
+        <span>Orlando, FL</span> |
+        <a href="https://www.linkedin.com/in/faruk-celik-197823221" target="_blank">LinkedIn</a>
     </div>
 </div>
 
@@ -116,21 +113,30 @@
                 <p><strong>University of Central Florida</strong></p>
                 <ul>
                     <li>Lead a research team of three on deep learning-based <strong>Virtual Place Recognition (VPR)</strong>.</li>
-                    <li>Developed <strong>"PDAL,"</strong> a novel geometry-preserving loss function, surpassing traditional Triplet Loss by 10x in spatial accuracy.</li>
-                    <li>Engineering a custom neural aggregator for submission to <strong>IEEE RA-L</strong>.</li>
-                    <li>Peer Reviewer for IEEE IROS.</li>
+                    <li>Developed <strong>"PDAL,"</strong> a novel geometry-preserving loss function, surpassing traditional Triplet Loss by 10x in spatial accuracy (Accepted at IGARSS 2026).</li>
+                    <li>Engineering a custom neural aggregator for submission to <strong>IEEE RA-L</strong>; designed for ultra-low memory footprint and high-speed inference.</li>
+                    <li><strong>Innovation in Training-Free Architectures:</strong> Architected a solution leveraging efficient feature aggregation and zero-shot capabilities.</li>
+                    <li>Peer Reviewer for <strong>IEEE IROS</strong>.</li>
                 </ul>
             </div>
         </div>
 
         <div class="card">
-            <h2>Publications & Projects</h2>
-            <h3>IGARSS 2026</h3>
-            <p>Presented a novel loss function for geographic feature extraction, exceeding traditional Triplet Loss by 10x in spatial accuracy.</p>
+            <h2>Projects & Publications</h2>
+            <h3>IGARSS 2026 Publication</h3>
+            <p>Presented a novel loss function for geographic feature extraction, exceeding traditional Triplet Loss by 10x in spatial accuracy. Accepted for publication at the International Geoscience and Remote Sensing Symposium.</p>
             
             <h3>AI@UCF Location Recognition</h3>
-            <p>Founded and led a PyTorch-based project for campus-wide location recognition.</p>
+            <span class="date">2025 – Present</span>
+            <p>Founded and led a PyTorch-based project for campus-wide location recognition at UCF.</p>
+        </div>
 
+        <div class="card">
+            <h2>Awards & Honors</h2>
+            <ul>
+                <li><strong>1st Place</strong> – International High School Capture The Flag Competition (AI & Data Science), UC Santa Barbara, 2023</li>
+                <li><strong>3rd Place</strong> – Teknofest A.I. for Health (Technical Lead), 2022</li>
+            </ul>
         </div>
     </div>
 
@@ -140,26 +146,45 @@
                 <img src="71097904.jpg" alt="Faruk Ilgaz Celik" class="profile-img">
             </div>
             <h3 style="text-align: center; border: none;">Profile</h3>
-            <p style="font-size: 0.9rem; text-align: center;">Deep Learning and Computer Vision.</p>
+            <p style="font-size: 0.9rem; text-align: center;">Specializing in Deep Learning, Computer Vision, and Feature Extraction.</p>
         </div>
 
         <div class="card">
             <h3>Technical Skills</h3>
             <div class="tag-container">
-                <span class="tag">Python</span> <span class="tag">C++</span> <span class="tag">C</span> <span class="tag">PyTorch</span> 
+                <span class="tag">Python</span> <span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Java</span>
+                <span class="tag">JavaScript</span> <span class="tag">PHP</span> <span class="tag">PyTorch</span> 
                 <span class="tag">OpenCV</span> <span class="tag">TensorFlow</span> <span class="tag">ONNX</span>
+                <span class="tag">NumPy</span> <span class="tag">Pandas</span> <span class="tag">Matplotlib</span>
             </div>
         </div>
 
         <div class="card">
             <h3>Education</h3>
-            <p><strong>UCF</strong><br>B.S. Computer Science</p>
+            <p><strong>University of Central Florida</strong><br>
+            B.S. Computer Science<br>
+            <small>Expected May 2029</small></p>
+            <p style="font-size: 0.85rem; color: #aaa;">Coursework: OOP, Calculus I-III, Linear Algebra</p>
+        </div>
+
+        <div class="card">
+            <h3>Certifications</h3>
+            <ul style="list-style: none; padding: 0; font-size: 0.85rem;">
+                <li>• Neural Networks & Deep Learning (DeepLearning.AI)</li>
+                <li>• CCST Cybersecurity (Cisco)</li>
+                <li>• IT Specialist in Java (Certiport)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Languages</h3>
+            <p style="font-size: 0.9rem;">English, Turkish</p>
         </div>
     </div>
 </div>
 
 <div class="footer">
-    <p>&copy; 2026 Faruk Ilgaz Celik</p>
+    <p>&copy; 2026 Faruk Ilgaz Celik | Built with Code</p>
 </div>
 
 </body>
